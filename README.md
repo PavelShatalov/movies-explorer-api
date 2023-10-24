@@ -1,5 +1,13 @@
-[![Tests](../../actions/workflows/tests-13-sprint.yml/badge.svg)](../../actions/workflows/tests-13-sprint.yml) [![Tests](../../actions/workflows/tests-14-sprint.yml/badge.svg)](../../actions/workflows/tests-14-sprint.yml)
+
 # movies-explorer-api
+
+## Ссылки на проект
+
+IP-адрес 158.160.127.56
+
+<!-- Frontend https://pavel.student.nomoredomainsrocks.ru -->
+
+Backend https://api.pavel-diplom.nomoredomainsrocks.ru
 
 
 ## Директории

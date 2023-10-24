@@ -47,6 +47,10 @@ app.use(cors({
     'http://localhost:3001',
     'https://praktikum.tk',
     'http://praktikum.tk',
+    'http://api.pavel-diplom.nomoredomainsrocks.ru',
+    'https://api.pavel-diplom.nomoredomainsrocks.ru',
+    'http://pavel-diplom.nomoredomainsrocks.ru',
+    'https://pavel-diplom.nomoredomainsrocks.ru',
   ],
   credentials: true,
 }));
