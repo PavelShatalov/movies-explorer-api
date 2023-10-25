@@ -7,7 +7,8 @@ const {
 } = require('../errors/index');
 
 module.exports.getMovie = (req, res, next) => {
-  Movie.find({})
+  const owner = req.user._id;
+  Movie.find({ owner })
     .then((movie) => res.send(movie))
     .catch(next);
 }; // возвращает все Movies
@@ -95,10 +96,10 @@ module.exports.createMovie = async (req, res, next) => {
 
 module.exports.deleteMovie = async (req, res, next) => {
   try {
-    const { cardId } = req.params;
+    const { movieId } = req.params;
     const owner = req.user._id;
 
-    const movie = await Movie.findById(cardId);
+    const movie = await Movie.findById(movieId);
 
     if (!movie) {
       throw new NotFoundError('Карточка с указанным _id не найдена.');

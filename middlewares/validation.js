@@ -6,7 +6,7 @@ const regexImageLink = /^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-
 const createUser = Joi.object().keys({
   email: Joi.string().required().email(),
   password: Joi.string().required(),
-  name: Joi.string().min(2).max(30),
+  name: Joi.string().min(2).max(30).required(),
 });
 
 const validateUser = Joi.object().keys({

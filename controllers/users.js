@@ -133,6 +133,9 @@ module.exports.updateUser = async (req, res, next) => {
   } catch (err) {
     if (err.name === 'ValidationError') {
       next(new BadRequestError('Переданы невалидные данные пользователя.'));
+    } else if (err.code === 11000) {
+      // Если возникает ошибка уникальности (дубликат email), вернуть статус 409
+      next(new ConflictError('Пользователь с таким email уже существует.'));
     } else {
       next(err);
     }
