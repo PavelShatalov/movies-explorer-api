@@ -52,6 +52,8 @@ app.use(cors({
     'https://api.pavel-diplom.nomoredomainsrocks.ru',
     'http://pavel-diplom.nomoredomainsrocks.ru',
     'https://pavel-diplom.nomoredomainsrocks.ru',
+    'http://pavel-diplom.nomoredomainsmonster.ru',
+    'https://pavel-diplom.nomoredomainsmonster.ru',
   ],
   credentials: true,
 }));
